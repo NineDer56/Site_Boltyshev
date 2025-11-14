@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Убираем отступы у body и html */
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+/* Footer растягивается на всю ширину */
+.site-footer {
+  width: 100%;
+  margin: 0;
+  padding-left: 0;
+  padding-right: 0;
+  box-sizing: border-box;
+}
+
+/* Header использует стили из mainStyle.css */
+.header.container {
+  width: 100%;
+  margin: 0;
+}
+
+.site-footer .footer-inner {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Стили для блока с кнопкой и полем ввода */
+.controls {
+  margin-bottom: 15px;
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 6px 8px;
+  font-size: 14px;
+}
+
+button {
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Стили для контейнеров с элементами */
+.container {
+  border: 2px solid #000;
+  padding: 8px;
+  margin-bottom: 15px;
+  min-height: 60px;
+}
+
+/* Блок 3 - синий блок для перетаскивания */
+#area3 {
+  min-height: 70px;
+  position: relative;
+}
+
+/* Нижняя строка с двумя блоками */
+.bottom-row {
+  display: flex;
+  gap: 15px;
+}
+
+#area2-wrapper {
+  flex: 1;
+  min-height: 220px;
+}
+
+#area1-wrapper {
+  flex: 1;
+  min-height: 220px;
+}
+
+/* Блок 2 - вертикальный список элементов */
+#area2 {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+
+/* Блок 1 - красный блок с вводом и выводом */
+#area1 {
+  min-height: 120px;
+  border: 2px solid #000;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Стили для элементов-карточек */
+.item {
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: move;
+  user-select: none;
+  font-size: 14px;
+  text-align: center;
+  min-width: 80px;
+  display: inline-block;
+  margin: 4px;
+}
+
+/* Элементы в блоке 3 имеют абсолютное позиционирование */
+#area3 .item {
+  position: absolute;
+  display: block;
+  margin: 0;
+}
+
+/* Элемент во время перетаскивания */
+.item.dragging {
+  opacity: 0.5;
+}
+
+/* Подсветка блока при наведении при перетаскивании */
+.drop-highlight {
+  outline: 2px dashed #999;
+}
+
+/* Блок для отображения слов */
+.word-display {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #c00;
+}

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Задание 1 — Магазин игрушек</title>
+    <link rel="stylesheet" href="toyStyle.css" />
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav-inner">
+                <a href="../index.html" class="brand">
+                    <span class="logo"></span>
+                    <span class="brand-text">Учебный сайт</span>
+                </a>
+                <a href="../index.html" class="back-btn">← Назад к заданиям</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section task-info">
+            <h1>Задание: Магазин игрушек</h1>
+            <p>На сцене используется интерактивная надпись и чекбокс: при клике появляется текст «Покупаю!» и
+                мальчик бежит через сцену. У кораблика и машинки есть hover-анимации. Вся сцена построена на
+                позиционировании и простых CSS-анимациях.</p>
+        </section>
+        <div class="container">
+            <input type="checkbox" id="trigger" hidden>
+            <label for="trigger" class="store-text">Магазин игрушек</label>
+            <span class="buy-text">Покупаю!</span>
+            <img src="images/shelf.png" alt="Полка" class="shelf-img">
+            <img src="images/car.png" alt="Машинка" class="car-img">
+            <img src="images/ship.png" alt="Кораблик" class="ship-img">
+            <img src="images/boy.png" alt="Мальчик" class="boy-img">
+            <div class="sepia-overlay"></div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="copyright">© 2025 Илья Болтышев</p>
+            <div class="footer-links">
+                <a href="mailto:ilya.boltyshev@mail.ru">ilya.boltyshev@mail.ru</a>
+                <a href="tel:+79228386478">+7 (922) 838-64-78</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

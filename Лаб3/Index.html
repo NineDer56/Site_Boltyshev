@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Основы js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav-inner">
+                <a href="../index.html" class="brand">
+                    <span class="logo"></span>
+                    <span class="brand-text">Учебный сайт</span>
+                </a>
+                <a href="../index.html" class="back-btn">← Назад к заданиям</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section task-info">
+            <h1>Основы js</h1>
+            <p>Интерактивное задание с выбором возраста и суммы денег. Программа определяет подходящий товар
+                (чайник, пылесос или холодильник) на основе введённых данных и применяет скидки для молодых
+                и пожилых покупателей. Всё реализовано на JavaScript.</p>
+        </section>
+
+        <section class="section">
+            <div class="lab3-container">
+                <h2>Ваш возраст</h2>
+                <div class="inputData">
+                    <label for="age" class="label">Возраст:</label>
+                    <input id="age" class="input" type="number" min="15" max="70" step="1" value="18" />
+                    <button id="chooseBtn" class="button">Выбрать</button>
+                </div>
+
+                <div id="result" class="result" hidden></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="copyright">© 2025 Илья Болтышев</p>
+            <div class="footer-links">
+                <a href="mailto:ilya.boltyshev@mail.ru">ilya.boltyshev@mail.ru</a>
+                <a href="tel:+79228386478">+7 (922) 838-64-78</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Разбор строки</title>
+  <link rel="stylesheet" href="../css/mainStyle.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header container">
+    <nav>
+      <div class="nav-inner">
+        <a href="../index.html" class="brand">
+          <span class="logo"></span>
+          <span class="brand-text">Учебный сайт</span>
+        </a>
+        <a href="../index.html" class="back-btn">← Назад к заданиям</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section task-info">
+      <h1>Разбор строки</h1>
+      <p>Интерактивное задание с разбором строки на слова, перетаскиванием элементов между блоками и отображением истории нажатий. Реализовано на JavaScript с использованием Drag & Drop API.</p>
+    </section>
+
+    <section class="section">
+      <div id="area3" class="container"></div>
+
+      <div class="bottom-row">
+        <div id="area2-wrapper">
+          <div id="area2" class="container"></div>
+        </div>
+
+        <div id="area1-wrapper">
+          <div id="area1">
+            <div class="controls">
+              <input id="sourceInput"
+                     type="text"
+                     placeholder="пример: лес-бочка-бык-крик-3-Бок-20" />
+              <button id="parseBtn">Разобрать</button>
+            </div>
+            <div id="wordDisplay" class="word-display"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© 2025 Илья Болтышев</p>
+      <div class="footer-links">
+        <a href="mailto:ilya.boltyshev@mail.ru">ilya.boltyshev@mail.ru</a>
+        <a href="tel:+79228386478">+7 (922) 838-64-78</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

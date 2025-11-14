@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom-тест</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <nav>
+            <div class="nav-inner">
+                <a href="../index.html" class="brand">
+                    <span class="logo"></span>
+                    <span class="brand-text">Учебный сайт</span>
+                </a>
+                <a href="../index.html" class="back-btn">← Назад к заданиям</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section task-info">
+            <h1>dom-тест</h1>
+            <p>Интерактивная мини-викторина с вопросами о молодёжном сленге. Вопросы перемешиваются,
+                ответы проверяются автоматически. После завершения доступен просмотр всех вопросов
+                с правильными ответами и объяснениями. Реализовано на JavaScript.</p>
+        </section>
+
+        <section class="section">
+            <div class="app">
+                <h1 class="title">Мини‑викторина</h1>
+
+                <div id="end-banner" class="end-banner"></div>
+
+                <div class="dynamic-area">
+                    <div id="question-area" class="question-area"></div>
+                    <div id="answers-area" class="answers-area"></div>
+                </div>
+
+                <div id="stats" class="stats"></div>
+
+                <div id="review" class="review hidden">
+                    <h2 class="review-title">Повторение</h2>
+                    <div id="review-list" class="review-list"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="copyright">© 2025 Илья Болтышев</p>
+            <div class="footer-links">
+                <a href="mailto:ilya.boltyshev@mail.ru">ilya.boltyshev@mail.ru</a>
+                <a href="tel:+79228386478">+7 (922) 838-64-78</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

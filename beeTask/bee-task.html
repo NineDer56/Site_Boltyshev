@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Мой сайт</title>
+  <link rel="stylesheet" href="bee-taskStyle.css" />
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <div class="nav-inner">
+        <a href="../index.html" class="brand">
+          <span class="logo"></span>
+          <span class="brand-text">Учебный сайт</span>
+        </a>
+        <a href="../index.html" class="back-btn">← Назад к заданиям</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section task-info">
+      <h1>Задание: Пчела</h1>
+      <p>На этой сцене с помощью CSS созданы облака, пчела, грибы и трава.
+        Пчела состоит из простых фигур, позиционированных относительно холста.
+        Облака и трава формируются градиентами и clip-path. Весь рисунок выполнен без изображений.</p>
+    </section>
+    <div id="picContent">
+      <div class="frame">
+        <div class="pic">
+          <div class="clouds">
+            <div class="cloud" style="left: 0px; top: 0px;"></div>
+            <div class="cloud" style="left: 45px; top: 15px;"></div>
+          </div>
+          <div class="bee">
+            <div class="head"></div>
+            <div class="body" style="transform: rotate(-35deg);"></div>
+            <div class="eye" style="left: -2px; top: 20px;"></div>
+            <div class="eye" style="left: 3px; top: 23px;"></div>
+            <div class="wing" style="transform: rotate(80deg); top: -24px;"></div>
+            <div class="wing" style="transform: rotate(30deg); top: -16px; left: -16px;"></div>
+            <div class="wing" style="transform: rotate(30deg); top: 16px; left: 28px;"></div>
+            <div class="wing" style="transform: rotate(80deg); top: 24px; left: 16px;"></div>
+          </div>
+          <div class="mushroom" style="left: -10px; bottom: 5px;">
+            <div class="cap"></div>
+            <div class="stem"></div>
+          </div>
+          <div class="mushroom" style="left: 35px; transform: scale(0.7) rotate(35deg); bottom: -10px;">
+            <div class="cap"></div>
+            <div class="stem"></div>
+          </div>
+          <div class="grass">
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="copyright">© 2025 Илья Болтышев</p>
+      <div class="footer-links">
+        <a href="mailto:ilya.boltyshev@mail.ru">ilya.boltyshev@mail.ru</a>
+        <a href="tel:+79228386478">+7 (922) 838-64-78</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
