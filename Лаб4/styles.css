@@ -17,14 +17,12 @@ body {
 }
 
 .header {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
     position: sticky;
     top: 0;
     z-index: 10;
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(90deg, #667eea, #764ba2, #f093fb) 1;
     box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
-    backdrop-filter: blur(10px);
     padding: 12px 0;
 }
 
