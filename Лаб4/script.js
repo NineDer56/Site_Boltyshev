@@ -167,7 +167,6 @@
         }).join('');
     }
 
-    // Инициализация
     renderQuestion();
     updateStats();
     answersArea.addEventListener('click', function (event) {

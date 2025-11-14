@@ -159,7 +159,6 @@ main {
   flex: 1;
 }
 
-/* Стили для main на страницах заданий */
 main:has(.task-info) {
   max-width: 960px;
   margin: 0 auto;
@@ -634,7 +633,6 @@ main:has(.task-info) {
   }
 }
 
-/* Стили для страниц заданий */
 .back-btn {
   text-decoration: none;
   color: #667eea;

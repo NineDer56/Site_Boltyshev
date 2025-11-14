@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 
-/* Убираем отступы у body и html */
 html {
   margin: 0;
   padding: 0;
@@ -15,7 +14,6 @@ body {
   width: 100%;
 }
 
-/* Footer растягивается на всю ширину */
 .site-footer {
   width: 100%;
   margin: 0;
@@ -24,7 +22,6 @@ body {
   box-sizing: border-box;
 }
 
-/* Header использует стили из mainStyle.css */
 .header.container {
   width: 100%;
   margin: 0;
@@ -36,7 +33,6 @@ body {
   margin: 0 auto;
 }
 
-/* Стили для блока с кнопкой и полем ввода */
 .controls {
   margin-bottom: 15px;
 }
@@ -53,7 +49,6 @@ button {
   cursor: pointer;
 }
 
-/* Стили для контейнеров с элементами */
 .container {
   border: 2px solid #000;
   padding: 8px;
@@ -61,13 +56,11 @@ button {
   min-height: 60px;
 }
 
-/* Блок 3 - синий блок для перетаскивания */
 #area3 {
   min-height: 70px;
   position: relative;
 }
 
-/* Нижняя строка с двумя блоками */
 .bottom-row {
   display: flex;
   gap: 15px;
@@ -83,7 +76,6 @@ button {
   min-height: 220px;
 }
 
-/* Блок 2 - вертикальный список элементов */
 #area2 {
   min-height: 180px;
   display: flex;
@@ -92,7 +84,6 @@ button {
   align-items: flex-start;
 }
 
-/* Блок 1 - красный блок с вводом и выводом */
 #area1 {
   min-height: 120px;
   border: 2px solid #000;
@@ -100,7 +91,6 @@ button {
   margin-bottom: 10px;
 }
 
-/* Стили для элементов-карточек */
 .item {
   padding: 8px 12px;
   border-radius: 4px;
@@ -113,24 +103,20 @@ button {
   margin: 4px;
 }
 
-/* Элементы в блоке 3 имеют абсолютное позиционирование */
 #area3 .item {
   position: absolute;
   display: block;
   margin: 0;
 }
 
-/* Элемент во время перетаскивания */
 .item.dragging {
   opacity: 0.5;
 }
 
-/* Подсветка блока при наведении при перетаскивании */
 .drop-highlight {
   outline: 2px dashed #999;
 }
 
-/* Блок для отображения слов */
 .word-display {
   font-size: 18px;
   margin-bottom: 8px;

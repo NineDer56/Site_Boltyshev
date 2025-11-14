@@ -134,7 +134,6 @@ nav {
   transform: scaleX(1);
 }
 
-/* если используешь header__menu / header__link */
 header nav {
   width: 100%;
   display: flex;
@@ -167,9 +166,6 @@ header nav {
 
 
 
-
-
-/* ===== ОСНОВНОЙ КОНТЕНТ ===== */
 main {
   flex: 1;
   max-width: 960px;
