@@ -367,6 +367,11 @@ main:has(.task-info) {
     display: block;
     width: 100%;
   }
+
+  .features-grid,
+  .tasks-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .features-grid {
@@ -594,8 +599,43 @@ main:has(.task-info) {
 }
 
 @media (max-width: 700px) {
+  .nav-inner {
+    padding: 0 12px;
+    flex-wrap: wrap;
+  }
+
+  .brand {
+    font-size: 16px;
+    padding: 4px 8px;
+  }
+
+  .brand-text {
+    font-size: 14px;
+  }
+
+  .logo {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header__menu {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .header__link {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
   .about__grid {
     grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 40px 12px 40px 12px;
+    grid-template-columns: 1fr;
+    gap: 24px;
   }
 
   .hero__title {
@@ -606,13 +646,13 @@ main:has(.task-info) {
     font-size: 16px;
   }
 
-  .section h2 {
-    font-size: 24px;
+  .section {
+    padding: 0 12px;
+    margin-top: 40px;
   }
 
-  .hero {
-    grid-template-columns: 1fr;
-    gap: 24px;
+  .section h2 {
+    font-size: 24px;
   }
 
   .hero__buttons {
@@ -627,6 +667,49 @@ main:has(.task-info) {
 
   .task-card__image {
     height: 150px;
+  }
+
+  main:has(.task-info) {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand-text {
+    display: none;
+  }
+
+  .header__menu {
+    gap: 2px;
+  }
+
+  .header__link {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .hero__title {
+    font-size: 24px;
+  }
+
+  .hero__subtitle {
+    font-size: 14px;
+  }
+
+  .section h2 {
+    font-size: 20px;
+  }
+
+  .nav-inner {
+    padding: 0 8px;
+  }
+
+  .hero {
+    padding: 32px 8px 32px 8px;
+  }
+
+  .section {
+    padding: 0 8px;
   }
 }
 
