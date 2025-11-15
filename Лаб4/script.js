@@ -5,6 +5,7 @@
     var statsNode = document.getElementById('stats');
     var reviewBlock = document.getElementById('review');
     var reviewList = document.getElementById('review-list');
+    var restartBtn = document.getElementById('restart-btn');
 
     const questions = [
         {
@@ -73,6 +74,26 @@
     var correctCount = 0;
     var locked = false;
     var finished = false;
+
+    function resetGame() {
+        shuffled = shuffle(questions);
+        order = [];
+        for (var shuffledIndex = 0; shuffledIndex < shuffled.length; shuffledIndex++) {
+            order.push({
+                text: shuffled[shuffledIndex].text,
+                answers: shuffle(shuffled[shuffledIndex].answers),
+                explanation: shuffled[shuffledIndex].explanation,
+            });
+        }
+        currentIndex = 0;
+        correctCount = 0;
+        locked = false;
+        finished = false;
+        restartBtn.classList.add('hidden');
+        reviewBlock.classList.add('hidden');
+        renderQuestion();
+        updateStats();
+    }
 
     function renderQuestion() {
         if (currentIndex >= order.length) {
@@ -144,6 +165,7 @@
         if (dynamicArea) dynamicArea.classList.add('hidden');
         updateStats();
         buildReview();
+        restartBtn.classList.remove('hidden');
     }
 
     function updateStats() {
@@ -183,6 +205,10 @@
             if (allReviewContents[listIndex] !== detailsContent) allReviewContents[listIndex].classList.add('hidden');
         }
         detailsContent.classList.toggle('hidden');
+    });
+
+    restartBtn.addEventListener('click', function () {
+        resetGame();
     });
 })();
 

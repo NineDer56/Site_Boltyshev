@@ -19,7 +19,8 @@ body {
 .header {
     position: sticky;
     top: 0;
-    z-index: 10;
+    z-index: 100;
+    background: #ffffff;
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(90deg, #667eea, #764ba2, #f093fb) 1;
     box-shadow: 0 2px 8px rgba(102, 126, 234, 0.1);
@@ -261,6 +262,34 @@ main {
     margin: 8px 0 12px;
     color: #16a34a;
     font-weight: 600;
+}
+
+.restart-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 16px 0 16px;
+    box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+}
+
+.restart-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.restart-btn:active {
+    transform: translateY(0);
+}
+
+.restart-btn.hidden {
+    display: none;
 }
 
 .dynamic-area {
