@@ -599,23 +599,44 @@ main:has(.task-info) {
 }
 
 @media (max-width: 700px) {
+  .header.container {
+    padding: 8px 0;
+  }
+
   .nav-inner {
     padding: 0 12px;
     flex-wrap: wrap;
+    gap: 8px;
   }
 
   .brand {
-    font-size: 16px;
-    padding: 4px 8px;
+    font-size: 15px;
+    padding: 2px 6px;
+    gap: 6px;
   }
 
   .brand-text {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .logo {
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .logo::before,
+  .logo::after {
+    width: 10px;
+    height: 18px;
+    top: 3px;
+  }
+
+  .logo::before {
+    left: 3px;
+  }
+
+  .logo::after {
+    right: 3px;
   }
 
   .header__menu {
@@ -624,8 +645,8 @@ main:has(.task-info) {
   }
 
   .header__link {
-    font-size: 14px;
-    padding: 6px 12px;
+    font-size: 13px;
+    padding: 4px 10px;
   }
 
   .about__grid {
@@ -675,8 +696,36 @@ main:has(.task-info) {
 }
 
 @media (max-width: 480px) {
+  .header.container {
+    padding: 6px 0;
+  }
+
   .brand-text {
     display: none;
+  }
+
+  .logo {
+    width: 22px;
+    height: 22px;
+  }
+
+  .logo::before,
+  .logo::after {
+    width: 8px;
+    height: 16px;
+    top: 3px;
+  }
+
+  .logo::before {
+    left: 2px;
+  }
+
+  .logo::after {
+    right: 2px;
+  }
+
+  .brand {
+    padding: 2px 4px;
   }
 
   .header__menu {
@@ -684,8 +733,12 @@ main:has(.task-info) {
   }
 
   .header__link {
-    font-size: 12px;
-    padding: 6px 8px;
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+
+  .nav-inner {
+    gap: 4px;
   }
 
   .hero__title {
