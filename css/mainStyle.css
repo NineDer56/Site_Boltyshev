@@ -659,12 +659,24 @@ main:has(.task-info) {
     gap: 24px;
   }
 
+  .hero__content {
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+  }
+
   .hero__title {
     font-size: 28px;
+    padding: 0 4px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .hero__subtitle {
     font-size: 16px;
+    padding: 0 4px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .section {
@@ -679,11 +691,18 @@ main:has(.task-info) {
   .hero__buttons {
     flex-direction: column;
     align-items: stretch;
+    gap: 12px;
+    padding: 0 4px;
+    width: 100%;
+    box-sizing: border-box;
   }
 
   .btn {
     width: 100%;
     text-align: center;
+    padding: 12px 16px;
+    font-size: 15px;
+    box-sizing: border-box;
   }
 
   .task-card__image {
@@ -695,76 +714,7 @@ main:has(.task-info) {
   }
 }
 
-@media (max-width: 480px) {
-  .header.container {
-    padding: 6px 0;
-  }
 
-  .brand-text {
-    display: none;
-  }
-
-  .logo {
-    width: 22px;
-    height: 22px;
-  }
-
-  .logo::before,
-  .logo::after {
-    width: 8px;
-    height: 16px;
-    top: 3px;
-  }
-
-  .logo::before {
-    left: 2px;
-  }
-
-  .logo::after {
-    right: 2px;
-  }
-
-  .brand {
-    padding: 2px 4px;
-  }
-
-  .header__menu {
-    gap: 2px;
-  }
-
-  .header__link {
-    font-size: 11px;
-    padding: 4px 6px;
-  }
-
-  .nav-inner {
-    gap: 4px;
-  }
-
-  .hero__title {
-    font-size: 24px;
-  }
-
-  .hero__subtitle {
-    font-size: 14px;
-  }
-
-  .section h2 {
-    font-size: 20px;
-  }
-
-  .nav-inner {
-    padding: 0 8px;
-  }
-
-  .hero {
-    padding: 32px 8px 32px 8px;
-  }
-
-  .section {
-    padding: 0 8px;
-  }
-}
 
 .back-btn {
   text-decoration: none;
