@@ -12,6 +12,18 @@ const clickCounts = {};
 
 const clickHistory = [];
 
+function renderClickHistory() {
+  wordDisplay.innerHTML = '';
+  for (let i = 0; i < clickHistory.length; i++) {
+    const entry = clickHistory[i];
+    const chip = document.createElement('span');
+    chip.className = 'word-chip';
+    chip.textContent = entry.value;
+    chip.style.color = entry.color;
+    wordDisplay.appendChild(chip);
+  }
+}
+
 function randomColor() {
   const h = Math.floor(Math.random() * 360);
   const s = 60 + Math.floor(Math.random() * 20);
@@ -45,7 +57,7 @@ function parseInputString(str) {
       nums.push(Number(token));
     } else {
       const firstChar = token[0];
-      if (firstChar.toLowerCase() === firstChar && firstChar.toUpperCase() !== firstChar) {
+      if (firstChar.toLowerCase() === firstChar) {
         lowers.push(token);
       } else {
         uppers.push(token);
@@ -104,7 +116,7 @@ function parseInputString(str) {
 function clearAreas() {
   area2.innerHTML = '';
   area3.innerHTML = '';
-  wordDisplay.textContent = '';
+  wordDisplay.innerHTML = '';
   
   for (const key in clickCounts) {
     delete clickCounts[key];
@@ -277,9 +289,12 @@ area3.addEventListener('click', function(e) {
     clickCounts[key] = 1;
   }
   
-  clickHistory.push(value);
+  clickHistory.push({
+    value: value,
+    color: item.dataset.originalColor || item.style.backgroundColor
+  });
 
-  wordDisplay.textContent = clickHistory.join(' ');
+  renderClickHistory();
 });
 
 parseBtn.addEventListener('click', function() {

@@ -120,5 +120,12 @@ button {
 .word-display {
   font-size: 18px;
   margin-bottom: 8px;
-  color: #c00;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.word-display .word-chip {
+  font-weight: 600;
+  padding: 2px 4px;
 }
